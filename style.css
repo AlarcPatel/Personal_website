@@ -1,0 +1,129 @@
+ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+}
+li 
+{
+  float: left;
+}
+li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) 
+{
+  background-color: #111;
+}
+.active 
+{ 
+  background-color: #4CAF50;
+}
+a {
+  color:bisque;
+  font-weight: normal;
+  text-decoration: none;
+}
+a:hover 
+{ 
+  border-bottom: solid green 4px;
+}
+div 
+{ 
+  margin: center;
+}
+ul 
+{ 
+  text-align: center;
+}
+h1 {
+  color:gold;
+  text-align: center;
+  font-size: larger;
+  text-align: center;
+}
+p
+{
+  color: red;
+  font-size: x-large;
+  text-align: center;
+}
+div
+{
+  color:white;
+  font-size: x-large;
+  text-align: center;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top {
+  width: 50%;
+}
+.bottom {
+  padding-top: 20px;
+}
+.left
+{
+  float:left;
+  color: green;
+}
+.right{
+  float: right;
+  color: green;
+  text-align: right;
+}
+.pad{
+  padding-bottom: 20px;
+}
+.title{
+  color: #4CAF50;
+  font-size: 48px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+.middle {
+  clear: both;
+  text-align: center;
+  padding-top: 80px;
+  width: 50%;
+}
+.school
+{
+  color: red;
+  text-align: left;
+  float: left;
+}
+.years
+{
+  color: royalblue;
+  text-align: right;
+  font-style: italic;
+  float: right;
+
+}
+.place
+{
+  color:greenyellow;
+  text-align: left;
+  padding-bottom: 40px;
+  clear: both;
+}
+.pro
+{
+  color: green;
+  font: x-large;
+}
+.lan
+{
+  color:goldenrod;
+  font-style: inherit;
+}
