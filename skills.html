@@ -1,37 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Skills - Alark Patel</title>
 </head>
-<body  style="background-color: black;">  
-    <ul>
-        <li><a href="index.html"> [About me]</a></li>
-        <li><a href="experience.html"> [Experiences]</a></li>
-        <li><a href="projects.html">[Project]</a></li>
-        <li><a href="skills.html"> [Skills]</a></li>
-        <li><a href="involvements.html">[Involvements]</a></li>
-      </ul>
-    <div class="middle"> 
-        <div class="title">Skills</div>
-        <div class="school">PROFICIENTLANGUAGES</div>
-        <div class="place">
-            Python3 | Java | C++ | JavaScript </br>
-        </div>
-        <div class="school">Familiar Languages:</div>
-        <div class="place">
-           C | R | Prolog Ocaml | dart | LaTeX  </br>
-        </div>
-        <div class="school"> Tools & Frameworks:</div>
-        <div class="place">
-            Git | Linux | MongoDB |  Django | Flask | GraphQl | React | Express |  Flutter</br>
-        </div>
-        <div class="school">Cloud Services</div>
-        <div class="place">
-             AWS | Azure </br>
+<body>
+    <a href="index.html" class="home-button" title="Back to Home">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <nav class="nav-menu">
+        <ul class="nav-list">
+            <li><a href="projects.html" class="nav-link"><span>01.</span>Projects</a></li>
+            <li><a href="experience.html" class="nav-link"><span>02.</span>Experience</a></li>
+            <li><a href="skills.html" class="nav-link"><span>03.</span>Skills</a></li>
+            <li><a href="education.html" class="nav-link"><span>04.</span>Education</a></li>
+        </ul>
+    </nav>
+            <li class="nav-item"><a href="involvements.html"><i class="fas fa-users"></i> Involvements</a></li>
+        </ul>
+    </nav>
+
+    <div class="middle">
+        <div class="title">Technical Skills</div>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="category-title">
+                    <i class="fas fa-cloud"></i>
+                    Cloud, DevOps & OS
+                </div>
+                <div class="skill-card">
+                    <div class="skill-item">
+                        <span class="skill-name">Amazon Web Services</span>
+                        <span class="skill-level advanced">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Kubernetes</span>
+                        <span class="skill-level intermediate">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">macOS</span>
+                        <span class="skill-level">Proficient</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Kali Linux</span>
+                        <span class="skill-level">Proficient</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-title">
+                    <i class="fas fa-infinity"></i>
+                    CI/CD & Container
+                </div>
+                <div class="skill-card">
+                    <div class="skill-item">
+                        <span class="skill-name">Jenkins</span>
+                        <span class="skill-level">Proficient</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CloudFormation</span>
+                        <span class="skill-level">Proficient</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Terraform</span>
+                        <span class="skill-level">Proficient</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Docker</span>
+                        <span class="skill-level">Proficient</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-title">
+                    <i class="fas fa-code"></i>
+                    Programming Languages
+                </div>
+                <div class="skill-card">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-level expert">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-level expert">Expert</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-level advanced">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-level intermediate">Intermediate</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">TypeScript</span>
+                        <span class="skill-level intermediate">Intermediate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-title">
+                    <i class="fas fa-tools"></i>
+                    Libraries & Tools
+                </div>
+                <div class="skill-card">
+                    <div class="skill-item">
+                        <span class="skill-name">Python - Boto3</span>
+                        <span class="skill-level advanced">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Python - Pandas</span>
+                        <span class="skill-level advanced">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java - Spring Boot</span>
+                        <span class="skill-level advanced">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Java - Maven</span>
+                        <span class="skill-level advanced">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-level advanced">Advanced</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">AWS SDK</span>
+                        <span class="skill-level advanced">Advanced</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-

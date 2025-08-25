@@ -1,25 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alark Patel - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body  style="background-color: black">  
-    <ul>
-        <li><a href="index.html"> [About me]</a></li>
-        <li><a href="experience.html"> [Experiences]</a></li>
-        <li><a href="projects.html">[Project]</a></li>
-        <li><a href="skills.html"> [Skills]</a></li>
-        <li><a href="involvements.html">[Involvements]</a></li>
-      </ul>
-<h1> +++++ Hello World +++++</h1>
-<p> Alark Patel </p>
-<div class="pad" > I am Software Engineer </div>
-<div class="pad">  Ping me: <a href="mailto:patelalark1@gmail.com">patelalark1@gmail.com</a></div>
-<div class="top bottom">
-    <a class="left" href="https://github.com/AlarcPatel"> { GitHub } </a>
-    <a class="right" href="https://www.linkedin.com/in/alark-patel/"> { Linkedin } </a>
-</div>
+<body>
+    <nav class="nav-menu">
+        <ul class="nav-list">
+            <li><a href="projects.html" class="nav-link"><span>01.</span>Projects</a></li>
+            <li><a href="experience.html" class="nav-link"><span>02.</span>Experience</a></li>
+            <li><a href="skills.html" class="nav-link"><span>03.</span>Skills</a></li>
+            <li><a href="education.html" class="nav-link"><span>04.</span>Education</a></li>
+        </ul>
+    </nav>
 
+    <section class="hero">
+        <div class="hero-content">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-button close"></span>
+                        <span class="terminal-button minimize"></span>
+                        <span class="terminal-button zoom"></span>
+                    </div>
+                    <div class="terminal-title">alark@portfolio ~ </div>
+                </div>
+                <div class="terminal-content">
+                    <div class="command-line">
+                        <span class="prompt">$</span> whoami
+                    </div>
+                    <div class="response">Alark Patel</div>
+                    <div class="command-line">
+                        <span class="prompt">$</span> pwd
+                    </div>
+                    <div class="response">Software Engineer @ New Jersey</div>
+                    <div class="command-line">
+                        <span class="prompt">$</span> <span class="typing-cursor">_</span>
+                    </div>
+                </div>
+            </div>
+            <p class="hero-intro">Hi, my name is</p>
+            <h1 class="hero-title">Alark Patel</h1>
+            <h2 class="hero-subtitle">Building the future, one line at a time.</h2>
+            <p class="hero-description">
+               I create to push boundaries and redefine what's possible, blending mastery of my craft with an endless sense of curiosity
+            </p>
+            <div class="cta-container">
+                <a href="mailto:patelalark1@gmail.com" class="cta-button primary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+                <a href="projects.html" class="cta-button secondary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="pattern-grid"></div>
+        </div>
+    </section>
+
+    <div class="social-links">
+        <a href="https://github.com/AlarcPatel" class="social-link" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/alark-patel/" class="social-link" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:patelalark1@gmail.com" class="social-link" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
 </body>
 </html>
-

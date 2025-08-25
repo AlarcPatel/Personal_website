@@ -1,38 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>My Experience</title>
 </head>
-<body  style="background-color: black;">  
-    <ul>
-        <li><a href="index.html"> [About me]</a></li>
-        <li><a href="experience.html"> [Experiences]</a></li>
-        <li><a href="projects.html">[Project]</a></li>
-        <li><a href="skills.html"> [Skills]</a></li>
-        <li><a href="involvements.html"> [Involvements]</a></li>
-      </ul>
+<body>
+    <a href="index.html" class="home-button" title="Back to Home">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <nav class="nav-menu">
+        <ul class="nav-list">
+            <li><a href="projects.html" class="nav-link"><span>01.</span>Projects</a></li>
+            <li><a href="experience.html" class="nav-link"><span>02.</span>Experience</a></li>
+            <li><a href="skills.html" class="nav-link"><span>03.</span>Skills</a></li>
+        </ul>
+    </nav>
+
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
 <div class="middle"> 
-    <div class="title">Education</div>
-    <div class="school">Rutgers University</div>
-    <div class="years">Graduated in May 2021</div> 
-    <div class="place">
-         <br/>
-        Course work: Data Structures, Algorithms, Data Literacy, Data Science,
-        Database management, Internet Technology, Discrete Maths<br/>
+    <div class="title">Professional Experience</div>
+    <div class="experience-card">
+        <div class="school">Software Engineer - Prudential Financial</div>
+        <div class="years">November 2022 - Present</div>
+        <div class="place">
+            <div class="bullet-point">Led Domain modernization by migrating legacy on-prem applications to AWS using ECS, Lambda and S3 ensuring data consistency, security, and highly fault-tolerant performance</div>
+            <div class="bullet-point">Aligned infrastructure design with Well-Architected Framework principles to monitor distributed systems, enhance observability and provided incident response</div>
+            <div class="bullet-point">Enhanced observability using CloudWatch and Splunk to reduce MTTR and improve alerting accuracy and timeliness</div>
+            <div class="bullet-point">Developed and supported a command-line interface (CLI) tool for BFF (Backend for Frontend) architecture to accelerate internal cloud-first development workflows</div>
+        </div>
     </div>
-    <div class="title">Experiences</div>
-    <div class="school">R&D: HackRU (Volunteer)</div>
-    <div class="years">Spring 2019</div> 
+    
+    <div class="school">Software Developer Engineer I - Luma Financial Technologies</div>
+    <div class="years">July 2022 – August 2022</div>
     <div class="place">
-        - Collaborated with team members to discuss the issues prior to the app deployment.</br>
-        - Performed manual testing on application for multiple devices.   
+        - Designed and implemented cloud-base architecture to support high volume transaction with high availability in a fintech platform<br/>
+        - Integrated backend services with Amazon RDS, S3 and DynamoDB, ensuring low latency and compliance with data security policies<br/>
+        - Built auto-scaling and health-checked services in ECS to support traffic spikes and rapid incident resolution
     </div>
-    <div class="school">Science Learning Center (Volunteer)</div>
-    <div class="years">Fall 2018</div> 
+
+    <div class="school">Associate Software Engineer - Infosys</div>
+    <div class="years">August 2021 – July 2022</div>
     <div class="place">
-        - Helped Students with Math (Calc I, II) & Physics (I, II) homework and problem sets.</br>
-        - Instructed students with data exploration and visulization using python. 
+        - Improved data handling by designing optimized storage and retrieval flows using S3 and DynamoDB, enhancing application performance by 30%<br/>
+        - Provisioned infrastructure with Terraform including VPCs, subnet, IAM and encryption policies with KMS<br/>
+        - Automated Infrastructure provisioning with Terraform, including VPC, subnets and IAM policies, reducing manual setup by 60%<br/>
+        - Supported Disaster Recovery plans with regular backup testing and implemented secure access workflows aligned with compliance
+    </div>
+
+    <div class="title">Additional Experience</div>
+    <div class="experience-card">
+        <div class="school">Cloud Engineering Certification Training</div>
+        <div class="years">April 2023</div>
+        <div class="place">
+            <div class="bullet-point">Implemented production-grade Kubernetes clusters and developed automated deployment pipelines</div>
+            <div class="bullet-point">Architected infrastructure using CloudFormation with high availability and disaster recovery</div>
+            <div class="bullet-point">Designed comprehensive monitoring solutions using Prometheus and Grafana</div>
+        </div>
+    </div>
+
+    <div class="experience-card">
+        <div class="school">HackRU R&D Team Lead</div>
+        <div class="years">March 2019</div>
+        <div class="place">
+            <div class="bullet-point">Led a team of developers in building and deploying the event management platform</div>
+            <div class="bullet-point">Implemented automated testing pipelines reducing deployment issues by 40%</div>
+            <div class="bullet-point">Mentored junior developers in best practices and modern development workflows</div>
+        </div>
+    </div>
+
+    <div class="experience-card">
+        <div class="school">Computer Science Teaching Assistant</div>
+        <div class="years">January 2019</div>
+        <div class="place">
+            <div class="bullet-point">Instructed 50+ students in advanced mathematics and computer science fundamentals</div>
+            <div class="bullet-point">Created Python-based data visualization workshops to enhance learning experience</div>
+            <div class="bullet-point">Developed interactive learning materials for complex mathematical concepts</div>
+        </div>
     </div>
 </div> 
+    <script src="script.js"></script>
 </body>
 </html>

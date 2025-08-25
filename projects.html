@@ -1,57 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body  style="background-color: black;">  
-    <ul>
-        <li><a href="index.html"> [About me]</a></li>
-        <li><a href="experience.html"> [Experiences]</a></li>
-        <li><a href="projects.html">[Project]</a></li>
-        <li><a href="skills.html"> [Skills]</a></li>
-        <li><a href="involvements.html">[Involvements]</a></li>
-      </ul>
-      <div class="middle"> 
-        <div class="title">Projects</div>
-          <div class="school">KISOK SYSTEM FOR CAFE</div>
-        <div class="years">Fall 2020</div> 
-        <div class="place">
-            -  Designed and implemented a fully functional and user-friendly software application that receives and manages orders from the customers using cafe kiosk.</br>
-            -  Performed unit testing and functional testing to test the software before deployment, also converted the entire software into scaleable android Application using JAVA.</br>          
-         <div class="school">Univariate Linear Regression</div>
-        <div class="years">Fall 2020</div> 
-        <div class="place">
-            - Performed various types of data exploration, and implemented univariate linear regression model and tested multiple loss functions (Square, absolute and Huber loss function.</br>
-            - Implemented gradient descent algorithm (L2 Loss) for minimizing loss function and applying same model to predict grades from student preformace dataset. </br>  
+<body>
+    <a href="index.html" class="home-button" title="Back to Home">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <nav class="nav-menu">
+        <ul class="nav-list">
+            <li><a href="projects.html" class="nav-link"><span>01.</span>Projects</a></li>
+            <li><a href="experience.html" class="nav-link"><span>02.</span>Experience</a></li>
+            <li><a href="skills.html" class="nav-link"><span>03.</span>Skills</a></li>
+            <li><a href="education.html" class="nav-link"><span>04.</span>Education</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <section class="project-section">
+            <h2 class="section-title" onclick="toggleSection(this)">
+                <i class="fas fa-chevron-down"></i>
+                Machine Learning Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-cloud project-icon"></i>
+                            <h3 class="project-title">AWS Serverless ETL Pipeline</h3>
+                            <p class="project-date">July 2025</p>
+                        </div>
+                        <p class="project-description">Engineered a sophisticated serverless ETL pipeline on AWS for automated data processing and analysis, enabling efficient data lake operations and business intelligence.</p>
+                        <ul class="project-details">
+                            <li>Designed and implemented serverless ETL pipeline using AWS Lambda and Step Functions</li>
+                            <li>Utilized Infrastructure as Code with Terraform for automated resource provisioning</li>
+                            <li>Built cost-effective S3 data lake with optimized query structure</li>
+                            <li>Integrated AWS Glue for data cataloging and enabled analysis with Amazon Athena</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>AWS Lambda</span>
+                            <span>Step Functions</span>
+                            <span>Terraform</span>
+                            <span>S3</span>
+                            <span>Glue</span>
+                            <span>Athena</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2 class="section-title" onclick="toggleSection(this)">
+                <i class="fas fa-chevron-down"></i>
+                Full Stack Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-store project-icon"></i>
+                            <h3 class="project-title">Cafe Kiosk System</h3>
+                            <p class="project-date">Fall 2020</p>
+                        </div>
+                        <p class="project-description">A fully functional and user-friendly software application that receives and manages orders from customers using a cafe kiosk.</p>
+                        <ul class="project-details">
+                            <li>Designed and implemented complete order management system</li>
+                            <li>Created scalable Android application using Java</li>
+                            <li>Performed comprehensive unit and functional testing</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Android</span>
+                            <span>SQL</span>
+                            <span>Unit Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-train project-icon"></i>
+                            <h3 class="project-title">Railway Enquiry System</h3>
+                            <p class="project-date">Spring 2020</p>
+                        </div>
+                        <p class="project-description">Web application using real-world data from New Jersey Transit System with features for schedule management and customer support.</p>
+                        <ul class="project-details">
+                            <li>Led team of 5 developers</li>
+                            <li>Implemented CRUD operations for train schedules</li>
+                            <li>Built admin and employee portals</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Web Development</span>
+                            <span>Database Management</span>
+                            <span>Team Leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-university project-icon"></i>
+                            <h3 class="project-title">Bank Account Management System</h3>
+                            <p class="project-date">Fall 2018</p>
+                        </div>
+                        <p class="project-description">Application for maintaining personal bank accounts with features for creating accounts, processing transactions, and managing interest rates.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Database</span>
+                            <span>Financial Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2 class="section-title">Machine Learning Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-cloud project-icon"></i>
+                            <h3 class="project-title">AWS Serverless ETL Pipeline</h3>
+                            <p class="project-date">2025</p>
+                        </div>
+                        <p class="project-description">Engineered a sophisticated serverless ETL pipeline on AWS for automated data processing and analysis, enabling efficient data lake operations and business intelligence.</p>
+                        <ul class="project-details">
+                            <li>Designed and implemented serverless ETL pipeline using AWS Lambda and Step Functions</li>
+                            <li>Utilized Infrastructure as Code with Terraform for automated resource provisioning</li>
+                            <li>Built cost-effective S3 data lake with optimized query structure</li>
+                            <li>Integrated AWS Glue for data cataloging and enabled analysis with Amazon Athena</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>AWS Lambda</span>
+                            <span>Step Functions</span>
+                            <span>Terraform</span>
+                            <span>S3</span>
+                            <span>Glue</span>
+                            <span>Athena</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-chart-line project-icon"></i>
+                            <h3 class="project-title">Prediction Modeling</h3>
+                            <p class="project-date">Spring 2019</p>
+                        </div>
+                        <p class="project-description">Advanced grade prediction system using multiple machine learning algorithms, achieving 98.9% accuracy with Random Forest.</p>
+                        <ul class="project-details">
+                            <li>Implemented multiple ML models (Random Forest, ANN, SVM)</li>
+                            <li>Conducted data exploration using R Studio</li>
+                            <li>Optimized for minimum MSE</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>R</span>
+                            <span>Random Forest</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-brain project-icon"></i>
+                            <h3 class="project-title">Univariate Linear Regression</h3>
+                            <p class="project-date">Fall 2020</p>
+                        </div>
+                        <p class="project-description">Implementation of various loss functions and gradient descent for predicting student performance.</p>
+                        <ul class="project-details">
+                            <li>Implemented Square, Absolute, and Huber loss functions</li>
+                            <li>Developed gradient descent algorithm with L2 Loss</li>
+                            <li>Applied model to student performance dataset</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>Data Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2 class="section-title">Data Analysis Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fab fa-twitter project-icon"></i>
+                            <h3 class="project-title">Twitter Sentiment Analysis</h3>
+                            <p class="project-date">Fall 2020</p>
+                        </div>
+                        <p class="project-description">Analysis of Twitter data to understand differences between online and traditional media coverage.</p>
+                        <ul class="project-details">
+                            <li>Implemented TF-IDF algorithm for text analysis</li>
+                            <li>Used NLTK for natural language processing</li>
+                            <li>Conducted unbiased sentiment analysis</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NLTK</span>
+                            <span>TF-IDF</span>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-        <div class="school">Twitter Analysis</div>
-        <div class="years">Fall 2020</div> 
-        <div class="place">
-            - Performed sentimental analysis based on tweets from president trump to understand difference between online media and traditional media without any bias.</br>
-            - Implemented TF-IDF algorithm to transform text into a meaningful representation of numbers using nltk. </br>
-        </div>
-        <div class="school">Railway Enquiry System</div>
-        <div class="years">Spring 2020</div> 
-        <div class="place">
-            - Lead a team of 5 to develop the simple user-friendly web application which uses real world data from New Jersey Transit System.</br>
-            - Functionality such as add, edit and delete train schedules, customer support, admin portal and employee portal to address major issues etc.</br>
-            - Gained knowledge about data management & relational algebra.   
-        </div>
-        <div class="school">Prediction Modeling</div>
-        <div class="years">Spring 2019</div> 
-        <div class="place">
-            - Predicted the grade earnings from student performance dataset with high accuracy of 98.9% using random forest amongst the ANN, SVM and R-part.</br>
-            - Explored the data using r-studio, observed the trend and implemented appropiate function for least MSE.   
-        </div>
-        <div class="school">Bank Account Managment System</div>
-        <div class="years">Fall 2018</div> 
-        <div class="place">
-            - The Bank Account Management System is an application for maintaining a person's bank account.</br>
-            - It has ability to create personal accounts, make withdrawals, process checks and flexible interest rate. 
-        </div>
-
-        <div class="pro"> Cool Projects Coming Soon... </div>
-
-    </div> 
 </body>
 </html>
