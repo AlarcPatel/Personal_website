@@ -1352,3 +1352,99 @@ html {
     font-size: 32px;
   }
 }
+
+/* Hero Grid for terminal + profile */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.terminal-wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.profile-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(2,12,27,0.5);
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  color: var(--lighter);
+  font-size: 28px;
+  margin: 0 0 6px;
+}
+
+.profile-role {
+  color: var(--text);
+  font-family: 'Fira Code', monospace;
+  font-size: 13px;
+}
+
+/* Adjust terminal to sit neatly next to profile */
+.terminal {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 540px;
+  margin: 0;
+  box-shadow: 0 12px 36px rgba(2,12,27,0.6);
+}
+
+/* Tighter hero text sizing */
+.hero-subtitle {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+.hero-description {
+  max-width: 700px;
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .profile-wrap {
+    order: -1;
+  }
+
+  .hero-content {
+    margin-left: 0; /* clear terminal reserve on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img { width: 120px; height: 120px; }
+  .hero-subtitle { font-size: 28px; }
+  .hero-description { font-size: 16px; }
+}
