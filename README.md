@@ -1,5 +1,7 @@
 # Alark Patel — Personal Portfolio
 
+A portfolio for Alark Patel, a cloud security and platform engineer building security platforms as code across AWS, Azure, and GCP.
+
 A responsive, editorial-style portfolio built with plain HTML, CSS, and JavaScript. Warm ivory, forest green, custom architecture artwork, and accessible navigation connect all seven pages.
 
 ## Pages
